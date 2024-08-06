@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: consumer
+#  kafka:
+#    bootstrap-servers: localhost:9092
+#    auto-offset-reset: earliest
+#    group-id: consumer-group-1
+#    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+#    consumer:
+#      properties:
+#        spring:
+#          deserializer:
+#            value:
+#              delegate:
+#                class: org.springframework.kafka.support.serializer.JsonDeserializer
+#          json:
+#            trusted:
+#              packages: '*'
+#            type:
+#              mapping: com.spring.producer.model.User:com.spring.consumer.model.User
+
+server:
+  port: 8081
